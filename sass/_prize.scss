@@ -1,0 +1,47 @@
+.prize {
+    margin-bottom: 48px;
+
+    &-list {
+        display: flex;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    &-heading {
+        text-transform: uppercase;
+    }
+
+    &-top {
+        margin-bottom: 14px;
+        padding: 15px 0;
+        text-align: center;
+        background-color: $primary-color;
+    }
+
+    &-img {
+        width: 100%;
+        height: 413px;
+
+        @include breakpoint-down(lg) {
+            height: 404px;
+        }
+
+        @include breakpoint-down(md) {
+            height: 209px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .slick-slide {
+        padding: 0 17px;
+        transition: all 0.5s linear;
+
+        @include breakpoint-down(md) {
+            padding: 0;
+        }
+    }
+}

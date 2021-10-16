@@ -1,0 +1,105 @@
+.media {
+    background: url(../image/media-background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    &-container {
+        padding: 36px 0 77px;
+    }
+
+    &-title {
+        text-transform: uppercase;
+        font-size: 40px;
+        line-height: calc(50 / 40);
+        margin-bottom: 24px;
+        color: $primary-color;
+        text-align: center;
+
+        @include breakpoint-down(lg) {
+            font-size: 3.2rem;
+        }
+    }
+
+    &-list {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 44px;
+        
+        @include breakpoint-down(md) {
+            padding:  0 22px;
+        }
+    }
+
+    &-item {
+        margin: 0 22px;
+        background-color: white;
+        min-height: 267px;
+    }
+
+    &-content {
+        padding: 34px 40px 34px 56px;
+
+        @include breakpoint-down(lg) {
+            padding: 28px 16px 28px 24px;
+        }
+    }
+
+    &-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 14px;
+    }
+
+    &-avatar {
+        margin-right: 24px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    &-heading {
+        margin-bottom: 6px;
+    }
+
+    &-desc {
+        max-width: 402px;
+        line-height: 24px;
+    }
+
+    .arrow-prev,
+    .arrow-next {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 47px;
+        height: 47px;
+        border: solid 1px #949494;
+        color: #949494;
+        outline: none;
+        background-color: transparent;
+        position: absolute;
+        top: 46%;
+        cursor: pointer;
+        z-index: 10;
+
+        @include breakpoint-down(md) {
+            width: 36px;
+            height: 36px;
+        }
+
+        &:hover {
+            background-color: $primary-color;
+            color: white;
+        }
+    }
+
+    .arrow-prev {
+        left: 0;
+    }
+    .arrow-next {
+        right: 0;
+    }
+}

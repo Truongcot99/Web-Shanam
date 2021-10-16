@@ -1,0 +1,19 @@
+.slides {
+    &-item {
+        width: 100%;
+
+        img {
+            height: 849px;
+            width: 100%;
+            object-fit: cover;
+
+            @include breakpoint-down(lg) {
+                height: 452px;
+            }
+
+            @include breakpoint-down(md) {
+                height: 244px;
+            }
+        }
+    }
+}

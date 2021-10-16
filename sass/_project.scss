@@ -1,0 +1,65 @@
+.project {
+    margin-top: 48px;
+
+    &-content {
+        padding: 15px 15px 15px 88px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f7f7f7;
+
+        @include breakpoint-down(lg) {
+            padding:  15px;
+        }
+
+        @include breakpoint-down(md) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &-info {
+        margin-right: 69px;
+
+        @include breakpoint-down(lg) {
+            margin-right: 20px;
+        }
+    }
+
+    &-heading {
+        margin-bottom: 9px;
+    }
+
+    &-desc {
+        margin-bottom: 28px;
+        line-height: 20px;
+    }
+
+    &-img {
+        width: 715px;
+        height: 433px;
+        flex-shrink: 0;
+        border-radius: 5px;
+
+        @include breakpoint-down(xl) {
+            width: 562px;
+            height: 362px;
+        }
+
+        @include breakpoint-down(lg) {
+            width: 370px;
+            height: 225px;
+        }
+
+        @include breakpoint-down(md) {
+            width: 100%;
+            height: 233px;
+            margin-bottom: 8px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

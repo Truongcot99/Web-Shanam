@@ -21,7 +21,7 @@ $(document).ready(function () {
     $('.prize-list').slick({
         infinite: true,
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         arrows: true,
         prevArrow: '<button class="chevron-prev"><i class="fas fa-chevron-left"></i></button>',
         nextArrow: '<button class="chevron-next"><i class="fas fa-chevron-right"></i></button>',
@@ -36,12 +36,12 @@ $(document).ready(function () {
         ]
     })
 
-    $('.slick-product-home').slick({
+    $('.slick-product').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        // autoplay: true,
-        // speed: 1000,
+        autoplay: true,
+        speed: 1000,
         arrows: true,
         prevArrow: '<button class="chevron-prev"><i class="fas fa-chevron-left"></i></button>',
         nextArrow: '<button class="chevron-next"><i class="fas fa-chevron-right"></i></button>',
@@ -113,6 +113,15 @@ $(document).ready(function () {
             }
         ]
     })
+    $('.product-detail-list').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        dots: true,
+    })
+
 
     $('.header-toggle').click(function () {
         $('.menu').toggleClass('active')
@@ -127,7 +136,7 @@ $(document).ready(function () {
     // refresh slickJS
 
     $(".nav-link").on("click", function () {
-        $(".slick-product-home").slick("refresh");
+        $(".slick-product").slick("refresh");
     });
 
 })

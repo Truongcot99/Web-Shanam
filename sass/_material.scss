@@ -1,5 +1,4 @@
 .material {
-        margin-bottom: 48px;
     
     &-content {
         background: url(../image/background-material.png);
@@ -88,6 +87,10 @@
             height: 360px;
         }
 
+        @include breakpoint-down(md) {
+            height: 233px;
+        }
+
         img {
             height: 100%;
             width: 100%;
@@ -102,6 +105,13 @@
         
         .chevron-next {
             right: 15px;
+        }
+    }
+
+    @include breakpoint-down(md) {
+        .chevron-next,
+        .chevron-prev {
+            top: 38%;
         }
     }
 }

@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="../assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../sass/main.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
@@ -51,7 +51,7 @@
 
     <header class="header">
         <div class="container header-container">
-            <a href="#" class="header-logo">
+            <a href="./index.html" class="header-logo">
                 <img srcset="../image/Logo-shanam.png 2x" alt="Logo công ty ShaNam">
             </a>
             <ul class="menu">
@@ -59,22 +59,22 @@
                     <i class="fas fa-times"></i>
                 </li>
                 <li class="menu-item">
-                    <a href="#" class="menu-link">Về Shanam</a>
+                    <a href="./gioi-thieu.html" class="menu-link">Về Shanam</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#" class="menu-link">vùng nguyên liệu</a>
+                    <a href="./vung-nguyen-lieu.html" class="menu-link">vùng nguyên liệu</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#" class="menu-link">chế biến sản xuất</a>
+                    <a href="./che-bien-san-suat.html" class="menu-link">chế biến sản xuất</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#" class="menu-link">sản phẩm</a>
+                    <a href="./san-pham.html" class="menu-link">sản phẩm</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#" class="menu-link">truyền thông</a>
+                    <a href="./truyen-thong.html" class="menu-link">truyền thông</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#" class="menu-link">liên hệ</a>
+                    <a href="./lien-he.html" class="menu-link">liên hệ</a>
                 </li>
                 <li class="menu-item menu-item--register hide-pc">
                     <a href="#" class="menu-link">Đăng ký đại lý</a>
@@ -297,19 +297,19 @@
             </div>
 
             <div class="manufacture-content">
-                <div class="manufacture-img">
+                <div class="manufacture-img" data-aos="fade-right">
                     <img src="../image/tea.png" alt="">
                 </div>
-                <div class="manufacture-info">
-                    <div class="manufacture-item" data-aos="fade-left" data-aos-delay="100">
+                <div class="manufacture-info" data-aos="fade-left">
+                    <div class="manufacture-item">
                         <div class="manufacture-icon">
                             <img src="../image/icon-tea.svg" alt="">
                         </div>
-                        <div class="text-medium manufacture-desc" data-aos="fade-right">
+                        <div class="text-medium manufacture-desc">
                             <span class="text-medium manufacture-desc">Hơn 20 năm kinh nghiệm làm chè</span>
                         </div>
                     </div>
-                    <div class="manufacture-item" data-aos="fade-left" data-aos-delay="300">
+                    <div class="manufacture-item">
                         <div class="manufacture-icon">
                             <img src="../image/icon-prize.svg" alt="">
                         </div>
@@ -317,7 +317,7 @@
                             <span class="text-medium manufacture-desc">Kết hợp kỹ thuật truyền thống và hiện đại</span>
                         </div>
                     </div>
-                    <div class="manufacture-item" data-aos="fade-left" data-aos-delay="500">
+                    <div class="manufacture-item">
                         <div class="manufacture-icon">
                             <img src="../image/icon-team.svg" alt="">
                         </div>
@@ -342,7 +342,7 @@
                     <img src="../image/icon-flower.svg" alt="">
                 </div>
             </div>
-            <div class="prize-content">
+            <div class="prize-content" data-aos="slide-up">
                 <div class="prize-list">
                     <div class="prize-item">
                         <div class="prize-top">
@@ -398,7 +398,7 @@
                     <img src="../image/icon-flower.svg" alt="">
                 </div>
             </div>
-            <div class="product-content">
+            <div class="product-content" data-aos="slide-up">
                 <ul class="nav nav-tabs border-0">
                     <li class="nav-item">
                         <a href="#tab-1" data-toggle="tab" role="tab" class="nav-link active">Trà lên men</a>
@@ -416,7 +416,7 @@
 
                 <div class="tab-content">
                     <div class="tab-pane show active" id="tab-1">
-                        <div class="slick-product-home">
+                        <div class="slick-product">
                             <div class="product-item">
                                 <div class="product-thumbnail">
                                     <img src="../image/hong-tra.png" alt="">
@@ -446,7 +446,6 @@
                                     <img src="../image/tra-xanh-vien.png" alt="">
                                     <span class="product-sale">-48%</span>
                                 </div>
-
                                 <h3 class="heading-small product-name">Trà xanh viên</h3>
                             </div>
                             <div class="product-item">
@@ -466,10 +465,13 @@
                                 <h3 class="heading-small product-name">Trà xanh viên</h3>
                             </div>
                         </div>
+                        <div class="product-btn">
+                            <a href="./tra-pha-che.html" class="btn">Xem tất cả</a>
+                        </div>
                     </div>
 
                     <div class="tab-pane" id="tab-2">
-                        <div class="slick-product-home">
+                        <div class="slick-product">
                             <div class="product-item">
                                 <div class="product-thumbnail">
                                     <img src="../image/hong-tra.png" alt="">
@@ -519,10 +521,13 @@
                                 <h3 class="heading-small product-name">Trà gừng</h3>
                             </div>
                         </div>
+                        <div class="product-btn">
+                            <a href="./tra-pha-che.html" class="btn">Xem tất cả</a>
+                        </div>
                     </div>
 
                     <div class="tab-pane" id="tab-3">
-                        <div class="slick-product-home">
+                        <div class="slick-product">
                             <div class="product-item">
                                 <div class="product-thumbnail">
                                     <img src="../image/hong-tra.png" alt="">
@@ -572,9 +577,12 @@
                                 <h3 class="heading-small product-name">Trà xanh viên</h3>
                             </div>
                         </div>
+                        <div class="product-btn">
+                            <a href="./tra-pha-che.html" class="btn">Xem tất cả</a>
+                        </div>
                     </div>
                     <div class="tab-pane" id="tab-4">
-                        <div class="slick-product-home">
+                        <div class="slick-product">
                             <div class="product-item">
                                 <div class="product-thumbnail">
                                     <img src="../image/hong-tra.png" alt="">
@@ -623,10 +631,10 @@
 
                                 <h3 class="heading-small product-name">Trà xanh viên</h3>
                             </div>
+                            <div class="product-btn">
+                                <a href="./tra-pha-che.html" class="btn">Xem tất cả</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product-btn">
-                        <a href="" class="btn">Xem tất cả</a>
                     </div>
                 </div>
     </section>
@@ -750,7 +758,7 @@
                     <img src="../image/icon-flower.svg" alt="">
                 </div>
             </div>
-            <div class="post-list">
+            <div class="post-list" data-aos="slide-up">
                 <div class="post-item">
                     <div class="post-thumbnail">
                         <a href=""><img src="../image/post-1.png" alt=""></a>

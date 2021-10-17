@@ -1,0 +1,116 @@
+.product-detail {
+    padding-top: 24px;
+
+    &-list {
+        position: relative;
+        margin-bottom: 28px;
+
+        @include breakpoint-down(lg) {
+            margin-bottom: 48px;
+        }
+    }
+
+    &-item {
+        display: flex !important;
+
+        @include breakpoint-down(lg) {
+            flex-direction: column;
+        }
+    }
+
+    &-img {
+        width: 437px;
+        height: 437px;
+        flex-shrink: 0;
+        margin-right: 26px;
+
+        @include breakpoint-down(lg) {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-info {
+        flex: 1;
+    }
+
+    &-name {
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        line-height: calc(30 / 24);
+        color: $primary-color;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    &-desc {
+        margin-bottom: 10px;
+        p {
+            font-size: 1.6rem;
+            line-height: calc(26 / 16);
+            color: $primary-color;
+            font-weight: 700;
+            text-transform: uppercase;
+        
+            strong {
+                color: #282828;
+            }
+        }
+    }
+    &-text {
+        max-width: 695px;
+        p {
+            line-height: calc(26 / 16);
+
+            @include breakpoint-down(md) {
+                font-size: 1.4rem;
+            }
+        }
+    }
+    &-btn {
+        margin-top: 38px;
+
+        @include breakpoint-down(lg) {
+            margin-top: 20px;
+        }
+    }
+
+    .slick-dots {
+        list-style: none;
+        display: flex;
+        position: absolute;
+        bottom: 12px;
+        left: 185px;
+
+        @include breakpoint-down(lg) {
+            bottom: 53%;
+            left: 50%;
+        }
+
+        li {
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+
+        .slick-active button {
+            background-color: #F2AB41;
+        }
+        
+        button {
+            width: 12px;
+            height: 12px;
+            background-color: white;
+            color: transparent;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+        }
+    }
+}

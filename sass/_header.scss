@@ -52,8 +52,14 @@
 
         &-item {
             padding: 16px 0;
+            position: relative;
+            
             &:not(:last-child) {
                 margin-right: 31px;
+
+                @include breakpoint-down(xl) {
+                    margin-right: 20px;
+                }
             }
             &--close {
                 position: absolute;
@@ -81,10 +87,30 @@
             text-transform: uppercase;
             font-weight: 700;
             color: black;
+            position: relative;
 
             &:hover {
                 color: $primary-color;
             }
+            
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 2px;
+                background-color: $primary-color;
+                transform-origin: bottom right;
+                transform: scaleX(0);
+                transition: transform 0.5s ease;
+              }
+              
+              &:hover::before {
+                color: $primary-color;
+                transform-origin: bottom left;
+                transform: scaleX(1);
+              }
         }
     }
 

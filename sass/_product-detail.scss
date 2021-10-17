@@ -94,9 +94,7 @@
         }
 
         li {
-            &:not(:last-child) {
-                margin-right: 20px;
-            }
+            padding: 0 10px;
         }
 
         .slick-active button {
@@ -112,5 +110,9 @@
             border: none;
             outline: none;
         }
+    }
+
+    .btn:not(:last-child) {
+        margin-right: 16px;
     }
 }

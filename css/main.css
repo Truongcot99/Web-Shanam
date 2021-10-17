@@ -1480,8 +1480,8 @@ body.noscroll {
     left: 50%;
   }
 }
-.product-detail .slick-dots li:not(:last-child) {
-  margin-right: 20px;
+.product-detail .slick-dots li {
+  padding: 0 10px;
 }
 .product-detail .slick-dots .slick-active button {
   background-color: #F2AB41;
@@ -1494,6 +1494,9 @@ body.noscroll {
   border-radius: 50%;
   border: none;
   outline: none;
+}
+.product-detail .btn:not(:last-child) {
+  margin-right: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */

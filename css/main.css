@@ -66,8 +66,6 @@ body.noscroll {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "UTM Babes", sans-serif;
-  color: inherit;
   text-transform: uppercase;
 }
 
@@ -1561,6 +1559,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 32px;
   margin-top: 20px;
   margin-bottom: 16px;
+  font-family: "UTM Babes", sans-serif;
 }
 .post-content ul {
   margin: 0 36px;

@@ -1,0 +1,106 @@
+.posts {
+    padding-bottom: 32px;
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+
+        @include breakpoint-down(md) {
+            padding: 0 30px;
+        }
+    }
+
+    &-item {
+        margin: 0 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        margin-bottom: 31px;
+
+        @include breakpoint-down(md) {
+            margin-bottom: 20x;
+        }
+    }
+
+    &-thumbnail {
+        position: relative;
+        @include breakpoint-down(md) {
+            width: 100%;
+            height: 200px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-content {
+        padding: 26px 26px 16px 26px;
+    }
+
+    &-time {
+        position: absolute;
+        left: 26px;
+        bottom: -15px;
+        padding: 8px 20px;
+        background-color: #75AD61;
+        
+    }
+
+    &-heading {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+        display:-webkit-box;
+        -webkit-line-clamp:2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+
+        @include breakpoint-down(md) {
+            margin-bottom: 8px;
+        }
+
+        &:hover a{
+            color: $primary-color;
+        }
+    }
+
+    &-desc {
+        margin-bottom: 14px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+
+        @include breakpoint-down(md) {
+            margin-bottom: 8px;
+        }
+    }
+
+    &-link {
+        padding: 8px;
+
+        a {
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: (18 / 14);
+            color: $primary-color;
+            margin-right: 8px;
+            text-transform: uppercase;
+
+            &:hover {
+                margin-right: 14px;
+                color: black;
+            }
+        }
+        i {
+            color: $primary-color;
+        }
+    }
+
+    &-btn {
+        text-align: center;
+    }
+} 

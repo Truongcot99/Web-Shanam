@@ -88,7 +88,7 @@ $(document).ready(function () {
         ]
     })
 
-    $('.post-list').slick({
+    $('.posts-list').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -140,21 +140,3 @@ $(document).ready(function () {
     });
 
 })
-
-// const navLinks = document.querySelectorAll('.nav-link')
-// const tabPanes = document.querySelectorAll('.product-pane')
-// navLinks.forEach(function (btn, index) {
-//     btn.addEventListener('click', function () {
-//         tabPane = tabPanes[index]
-
-//         document.querySelector('.nav-link.active').classList.remove('active');
-//         document.querySelector('.product-pane.active').classList.remove('active');
-//         document.querySelector('.product-pane.fade').classList.remove('fade');
-//         document.querySelector('.product-pane.show').classList.remove('show');
-
-//         this.classList.add('active');
-//         tabPane.classList.add('active');
-//         tabPane.classList.add('fade');
-//         tabPane.classList.add('show');
-//     })
-// })

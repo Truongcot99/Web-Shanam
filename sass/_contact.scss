@@ -1,0 +1,46 @@
+.contact {
+    padding-top: 60px;
+    padding-bottom: 48px;
+
+    &-title {
+        font-size: 3.2rem;
+        font-family: $font-heading;
+        margin-bottom: 24px;
+        display: block;
+    }
+
+    &-content {
+        padding-left: 40px;
+        padding-right: 10px;
+
+        @include breakpoint-down(lg) {
+            padding: 0 15px;
+            margin-top: 30px;
+        }
+    }
+
+    &-desc {
+        margin-bottom: 20px;
+        max-width: 440px;
+    }
+
+    &-info {
+        p {
+            font-size: 1.6rem;
+            margin-bottom: 16px;
+
+            i {
+                color: $primary-color;
+                margin-right: 8px;
+            }
+
+            a {
+                color: black;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
